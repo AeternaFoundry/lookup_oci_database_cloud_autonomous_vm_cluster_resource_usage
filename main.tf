@@ -1,0 +1,6 @@
+data "oci_database_cloud_autonomous_vm_cluster_resource_usage" "database_cloud_autonomous_vm_cluster_resource_usage_lookup" {
+  for_each = var.database_cloud_autonomous_vm_cluster_resource_usage_lookup
+
+  cloud_autonomous_vm_cluster_id = each.value.cloud_autonomous_vm_cluster_id
+}
+
